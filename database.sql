@@ -1,6 +1,6 @@
 -- Create the database
-CREATE DATABASE IF NOT EXISTS ob_rentaltours CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-USE ob_rentaltours;
+CREATE DATABASE IF NOT EXISTS ob_elitedrive CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE ob_elitedrive;
 
 -- Table structure for cars
 CREATE TABLE IF NOT EXISTS cars (
