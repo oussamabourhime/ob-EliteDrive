@@ -2,7 +2,7 @@
 // includes/db.php
 
 $host = 'localhost';
-$db   = 'ob_rentaltours';
+$db   = 'ob_elitedrive';
 $user = 'root'; // default XAMPP user
 $pass = '';     // default XAMPP password is empty
 
