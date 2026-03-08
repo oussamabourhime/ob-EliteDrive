@@ -1,0 +1,119 @@
+/* =========================================================================
+   CONTACT SECTION
+   ========================================================================= */
+.contact-section {
+    background-color: var(--clr-white);
+    color: var(--clr-black);
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: stretch;
+}
+
+.contact-info-block {
+    background-color: var(--clr-black-light);
+    color: var(--clr-white);
+    padding: 50px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: var(--shadow-hover);
+}
+
+.contact-info-block h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contact-info-block h3 span {
+    color: var(--clr-primary-red);
+}
+
+.contact-info-block p {
+    color: #ccc;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+}
+
+.contact-detail {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.contact-icon {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(193, 39, 45, 0.1);
+    border: 1px solid var(--clr-primary-red);
+    color: var(--clr-primary-red);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    margin-right: 20px;
+}
+
+.contact-text h4 {
+    font-size: 0.9rem;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.contact-text p {
+    color: var(--clr-white);
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.contact-form-block {
+    padding: 20px 0;
+}
+
+.contact-form-block h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.contact-form-block > p {
+    color: var(--clr-gray-dark);
+    margin-bottom: 30px;
+}
+
+.contact-form .form-control {
+    width: 100%;
+    padding: 16px 20px;
+    background-color: var(--clr-gray-light);
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-family: var(--font-main);
+    font-size: 1rem;
+    color: var(--clr-black);
+    transition: all var(--transition-fast);
+}
+
+.contact-form .form-control:focus {
+    border-color: var(--clr-primary-red);
+    outline: none;
+    background-color: var(--clr-white);
+    box-shadow: 0 0 0 4px rgba(193, 39, 45, 0.1);
+}
+
+textarea.form-control {
+    resize: vertical;
+    min-height: 150px;
+}
+
+@media (max-width: 991px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+}
