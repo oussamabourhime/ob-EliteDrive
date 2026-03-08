@@ -73,7 +73,7 @@ try {
 
 // 2. DIRECTORIES AND ASSETS SETUP
 $target_dir = __DIR__ . '/assets/images/cars';
-$source_dir = 'C:/Users/bourhime oussama/.gemini/antigravity/brain/043e7375-6246-45c1-80fb-f234d3fcf5f9';
+$source_dir = 'C:/Users/ob';
 
 if (!file_exists($target_dir)) {
     mkdir($target_dir, 0777, true);
@@ -101,12 +101,3 @@ copyLatestImage($source_dir, $target_dir, 'panamera', 'panamera.jpg');
 copyLatestImage($source_dir, $target_dir, 'rsq8', 'audi-rsq8.jpg');
 copyLatestImage($source_dir, $target_dir, 'roma', 'ferrari-roma.jpg');
 
-// Create an empty video bg file to avoid 404
-$video_dir = __DIR__ . '/assets/videos';
-if (!file_exists($video_dir)) {
-    mkdir($video_dir, 0777, true);
-}
-if (!file_exists("$video_dir/hero-bg.mp4")) {
-    file_put_contents("$video_dir/hero-bg.mp4", ""); // Empty placeholder to prevent error
-}
-?>
