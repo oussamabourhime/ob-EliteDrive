@@ -10,8 +10,8 @@ try {
     $setup_pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     
     // Create DB
-    $setup_pdo->exec("CREATE DATABASE IF NOT EXISTS ob_rentaltours CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci");
-    $setup_pdo->exec("USE ob_rentaltours");
+    $setup_pdo->exec("CREATE DATABASE IF NOT EXISTS ob_elitedrive CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci");
+    $setup_pdo->exec("USE ob_elitedrive");
     
     // Create Tables
     $setup_pdo->exec("
